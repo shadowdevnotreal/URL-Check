@@ -203,11 +203,12 @@ AR (Arkansas): www.armedicalboard.org
 
 def main():
     """Run the web application"""
-    print("\n" + "=" * 60)
-    print("🌐 WebCheck Web Interface")
-    print("=" * 60)
-    print("\nStarting server on http://localhost:5000")
-    print("Press Ctrl+C to stop\n")
+    # Header with emoji-aware width (emojis take 2 columns)
+    print("\n" + "=" * 50)
+    print("  🌐 WebCheck Web Interface")
+    print("=" * 50)
+    print("\n  🚀 Starting server on http://localhost:5000")
+    print("  💡 Press Ctrl+C to stop\n")
 
     # Get event loop for async tasks
     loop = asyncio.new_event_loop()
