@@ -133,7 +133,7 @@ Most URL checkers are either:
 
 ### 📈 Activity Graph
 
-![Alt](https://repobeats.axiom.co/api/embed/d8b4e8c0c5f9a1c2d3e4f5a6b7c8d9e0f1a2b3c4.svg "Repobeats analytics image")
+![Alt](https://repobeats.axiom.co/api/embed/a3b1153f9261f4813308a3e455610c9e93eff230.svg "Repobeats analytics image")
 
 <details>
 <summary><b>📊 More Stats (Click to expand)</b></summary>
