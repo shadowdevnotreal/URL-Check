@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebCheck - URL Health Checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌐 WebCheck</h1>
+            <p class="subtitle">High-Performance URL Health Checker</p>
+            <div class="badges">
+                <span class="badge">CLI</span>
+                <span class="badge">Web</span>
+                <span class="badge">Cloud Shell</span>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="card">
+                <h2>📝 Enter URLs to Check</h2>
+
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="switchTab('paste')">✍️ Paste URLs</button>
+                    <button class="tab-btn" onclick="switchTab('upload')">📁 Upload File</button>
+                </div>
+
+                <div id="paste-tab" class="tab-content active">
+                    <textarea id="urls-input" placeholder="Enter URLs in this format:&#10;&#10;Group Name: Description&#10;  Full URL: https://example.com&#10;  Full URL: https://another-example.com&#10;&#10;Or click 'Load Example' to see a sample"></textarea>
+                    <button class="btn-secondary" onclick="loadExample()">Load Example</button>
+                </div>
+
+                <div id="upload-tab" class="tab-content">
+                    <div class="upload-zone" id="upload-zone">
+                        <input type="file" id="file-input" accept=".txt" style="display: none;" onchange="handleFileSelect(event)">
+                        <div class="upload-content">
+                            <p>📁 Drag and drop a .txt file here</p>
+                            <p>or</p>
+                            <button class="btn-secondary" onclick="document.getElementById('file-input').click()">
+                                Browse Files
+                            </button>
+                        </div>
+                    </div>
+                    <div id="file-name" class="file-name"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>⚙️ Configuration</h2>
+
+                <div class="config-grid">
+                    <div class="config-item">
+                        <label for="concurrency">Concurrency</label>
+                        <input type="number" id="concurrency" value="30" min="1" max="100">
+                        <small>Concurrent connections</small>
+                    </div>
+
+                    <div class="config-item">
+                        <label for="retries">Retries</label>
+                        <input type="number" id="retries" value="3" min="0" max="10">
+                        <small>Retry attempts</small>
+                    </div>
+
+                    <div class="config-item">
+                        <label for="rate-limit">Rate Limit</label>
+                        <input type="number" id="rate-limit" value="0.1" min="0" max="5" step="0.05">
+                        <small>Delay in seconds</small>
+                    </div>
+
+                    <div class="config-item">
+                        <label>
+                            <input type="checkbox" id="ssl-verify" checked>
+                            SSL Verification
+                        </label>
+                        <small>Verify SSL certificates</small>
+                    </div>
+
+                    <div class="config-item">
+                        <label>
+                            <input type="checkbox" id="error-only">
+                            Error Only
+                        </label>
+                        <small>Show only failures</small>
+                    </div>
+                </div>
+            </div>
+
+            <button id="check-btn" class="btn-primary" onclick="startCheck()">
+                🚀 Start Check
+            </button>
+
+            <div id="progress-section" class="card" style="display: none;">
+                <h2>📊 Progress</h2>
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <p id="progress-text">Checking URLs...</p>
+            </div>
+
+            <div id="results-section" class="card" style="display: none;">
+                <h2>✅ Results</h2>
+
+                <div class="summary-grid" id="summary"></div>
+
+                <div class="results-actions">
+                    <button class="btn-secondary" onclick="downloadReport('html')">📄 Download HTML</button>
+                    <button class="btn-secondary" onclick="downloadReport('json')">📄 Download JSON</button>
+                    <button class="btn-secondary" onclick="downloadReport('csv')">📄 Download CSV</button>
+                </div>
+
+                <div id="results-list"></div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Built with ❤️ for high-performance URL health checking</p>
+            <p>
+                <a href="https://github.com/shadowdevnotreal/URL-Check" target="_blank">GitHub</a> •
+                <a href="https://www.buymeacoffee.com/diatasso" target="_blank">Support</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
