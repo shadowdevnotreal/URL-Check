@@ -723,12 +723,13 @@ Examples:
     logger.info("WebCheck started")
     logger.info(f"Config: concurrency={config.concurrency}, retries={config.retries}, ssl_verify={config.ssl_verify}")
 
-    print("\n" + "=" * 60)
-    print("🌐 WebCheck - High-Performance URL Health Checker")
-    print("=" * 60)
-    print(f"⚙️  Concurrency: {config.concurrency} | Retries: {config.retries} | SSL: {config.ssl_verify}")
-    print(f"⏱️  Rate limit: {config.rate_limit_delay}s + jitter")
-    print("=" * 60 + "\n")
+    # Header with emoji-aware width (emojis take 2 columns)
+    print("\n" + "=" * 70)
+    print("  🌐 WebCheck - High-Performance URL Health Checker")
+    print("=" * 70)
+    print(f"  ⚙️  Concurrency: {config.concurrency} | Retries: {config.retries} | SSL: {config.ssl_verify}")
+    print(f"  ⏱️  Rate limit: {config.rate_limit_delay}s + jitter")
+    print("=" * 70 + "\n")
 
     # Load URLs
     entries = load_urls(args.input_file)

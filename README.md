@@ -2,6 +2,42 @@
 
 > *Because life's too short for broken links and slow monitoring tools* 🚀
 
+<p align="center">
+  <!-- GitHub Stats -->
+  <a href="https://github.com/shadowdevnotreal/URL-Check/stargazers">
+    <img src="https://img.shields.io/github/stars/shadowdevnotreal/URL-Check?style=for-the-badge&logo=github&color=4CAF50" alt="GitHub stars">
+  </a>
+  <a href="https://github.com/shadowdevnotreal/URL-Check/network/members">
+    <img src="https://img.shields.io/github/forks/shadowdevnotreal/URL-Check?style=for-the-badge&logo=github&color=4CAF50" alt="GitHub forks">
+  </a>
+  <a href="https://github.com/shadowdevnotreal/URL-Check/issues">
+    <img src="https://img.shields.io/github/issues/shadowdevnotreal/URL-Check?style=for-the-badge&logo=github&color=orange" alt="GitHub issues">
+  </a>
+  <a href="https://github.com/shadowdevnotreal/URL-Check/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/shadowdevnotreal/URL-Check?style=for-the-badge&color=4CAF50" alt="License">
+  </a>
+</p>
+
+<p align="center">
+  <!-- Language & Tech Stats -->
+  <img src="https://img.shields.io/github/languages/top/shadowdevnotreal/URL-Check?style=flat-square&logo=python&color=3776AB" alt="Top language">
+  <img src="https://img.shields.io/github/languages/count/shadowdevnotreal/URL-Check?style=flat-square&color=4CAF50" alt="Language count">
+  <img src="https://img.shields.io/github/repo-size/shadowdevnotreal/URL-Check?style=flat-square&color=4CAF50" alt="Repo size">
+  <img src="https://img.shields.io/github/last-commit/shadowdevnotreal/URL-Check?style=flat-square&color=4CAF50" alt="Last commit">
+  <img src="https://img.shields.io/badge/PRs-welcome-4CAF50?style=flat-square" alt="PRs welcome">
+</p>
+
+<p align="center">
+  <!-- Activity & Community -->
+  <img src="https://img.shields.io/github/commit-activity/m/shadowdevnotreal/URL-Check?style=flat-square&color=4CAF50&label=commits" alt="Commit activity">
+  <img src="https://img.shields.io/github/contributors/shadowdevnotreal/URL-Check?style=flat-square&color=4CAF50" alt="Contributors">
+  <a href="https://github.com/shadowdevnotreal/URL-Check/watchers">
+    <img src="https://img.shields.io/github/watchers/shadowdevnotreal/URL-Check?style=flat-square&color=4CAF50" alt="Watchers">
+  </a>
+</p>
+
+---
+
 A **blazingly fast**, production-ready URL health monitoring tool that actually works. No enterprise bloat. No confusing dashboards. Just pure, async, Python-powered URL checking goodness with intelligent rate limiting, anti-fingerprinting, and reports so pretty they'll make you cry. 😭
 
 **Run Anywhere:** CLI • Web Browser • Cloud Shell | **Check Everything:** DNS • TCP • HTTP • SSL • CAPTCHA Detection
@@ -14,6 +50,13 @@ A **blazingly fast**, production-ready URL health monitoring tool that actually 
 
 <p align="center">
   <strong>⭐ Star us if we saved your sanity! ⭐</strong>
+  <br>
+  <sub>
+    <a href="https://github.com/shadowdevnotreal/URL-Check/subscription">👀 Watch</a> •
+    <a href="https://github.com/shadowdevnotreal/URL-Check/fork">🔱 Fork</a> •
+    <a href="https://github.com/shadowdevnotreal/URL-Check/issues/new">🐛 Report Bug</a> •
+    <a href="https://github.com/shadowdevnotreal/URL-Check/issues/new">✨ Request Feature</a>
+  </sub>
 </p>
 
 ---
@@ -73,6 +116,56 @@ Most URL checkers are either:
 - **Verbose Logging** - Debug mode when things go sideways
 - **Type Safety** - Python dataclasses for the win
 - **No Auto-Sudo** - We respect your security posture
+
+---
+
+## 📊 Project Stats & Showcase
+
+<p align="center">
+  <img src="https://repobeats.axiom.co/api/embed/YOUR_ANALYTICS_KEY.svg" alt="Repobeats analytics" width="100%" />
+</p>
+
+### ⭐ Star History
+
+<p align="center">
+  <a href="https://star-history.com/#shadowdevnotreal/URL-Check&Date">
+    <img src="https://api.star-history.com/svg?repos=shadowdevnotreal/URL-Check&type=Date" alt="Star History Chart" width="600">
+  </a>
+</p>
+
+### 🏆 Top Contributors
+
+<p align="center">
+  <a href="https://github.com/shadowdevnotreal/URL-Check/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=shadowdevnotreal/URL-Check" alt="Contributors" />
+  </a>
+</p>
+
+### 💻 Code Activity
+
+<p align="center">
+  <img src="https://repobeats.axiom.co/api/embed/YOUR_ANALYTICS_KEY.svg" alt="Analytics" />
+</p>
+
+<details>
+<summary><b>📈 More Stats (Click to expand)</b></summary>
+
+<br>
+
+**Language Distribution:**
+```
+Python      ████████████████████░░  95%
+JavaScript  ██░░░░░░░░░░░░░░░░░░░░   3%
+CSS         █░░░░░░░░░░░░░░░░░░░░░   1%
+HTML        █░░░░░░░░░░░░░░░░░░░░░   1%
+```
+
+**Lines of Code:** ~3,000+
+**Files:** 12
+**Dependencies:** 7 (minimal!)
+**Test Coverage:** Coming soon™
+
+</details>
 
 ---
 
@@ -137,6 +230,110 @@ python webcheck_web.py
 - ✅ Your laptop's battery says "thank you"
 
 📖 **[Complete Cloud Shell Guide →](CLOUDSHELL.md)**
+
+---
+
+## 🎬 See It In Action
+
+<details>
+<summary><b>📺 CLI Demo (Click to expand)</b></summary>
+
+<br>
+
+```
+============================================================
+🌐 WebCheck - High-Performance URL Health Checker
+============================================================
+⚙️  Concurrency: 30 | Retries: 3 | SSL: True
+⏱️  Rate limit: 0.1s + jitter
+============================================================
+
+📋 Loaded 50 URLs
+
+🔍 Checking URLs...
+
+Progress: 100%|████████████████████| 50/50 [00:08<00:00,  5.85url/s]
+
+============================================================
+🟢 Google: Search Engine
+Original: Full URL: https://www.google.com
+Tested:   https://www.google.com
+DNS:      142.250.80.46 (0.023s)
+TCP:      True (0.145s)
+HTTP:     200 (0.312s)
+============================================================
+
+📊 SUMMARY
+============================================================
+
+🌐 Total URLs: 50
+✅ Success: 48 (96.0%)
+⚠️  Warnings: 1 (2.0%)
+❌ Failures: 1 (2.0%)
+
+📄 HTML report saved to: webcheck_report.html
+📄 JSON report saved to: webcheck_report.json
+📄 CSV report saved to: webcheck_report.csv
+
+✅ All checks completed!
+```
+
+</details>
+
+<details>
+<summary><b>🌐 Web Interface Preview (Click to expand)</b></summary>
+
+<br>
+
+**Main Dashboard:**
+```
+╔═══════════════════════════════════════════════════════════╗
+║  🌐 WebCheck - High-Performance URL Health Checker        ║
+╠═══════════════════════════════════════════════════════════╣
+║  ✍️  Paste URLs  |  📁 Upload File                        ║
+║  ───────────────────────────────────────────────────────  ║
+║                                                            ║
+║  [Drag & drop your URLs file here]                        ║
+║                                                            ║
+║  ⚙️  Configuration:                                        ║
+║    Concurrency: 30    Retries: 3    Rate Limit: 0.1s     ║
+║    ☑️ SSL Verify      ☐ Error Only                        ║
+║                                                            ║
+║              [🚀 Start Check]                             ║
+║                                                            ║
+║  📊 Progress: ████████████████████░░ 95%                  ║
+║     Checked 48 of 50 URLs                                 ║
+╚═══════════════════════════════════════════════════════════╝
+```
+
+**Results View:**
+- Interactive table with color-coded results
+- Real-time latency graphs
+- Download buttons for all formats
+- Mobile-responsive design
+
+</details>
+
+---
+
+## 🛠️ Tech Stack
+
+<p align="center">
+
+| Technology | Purpose | Why We Use It |
+|------------|---------|---------------|
+| ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) | Core Language | Async capabilities, rich ecosystem |
+| ![aiohttp](https://img.shields.io/badge/aiohttp-2C5BB4?style=for-the-badge&logo=aiohttp&logoColor=white) | HTTP Client | Blazing fast async requests |
+| ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white) | Web Framework | Lightweight, perfect for APIs |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) | Frontend | Interactive web interface |
+| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) | Styling | Beautiful green theme |
+| ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) | Version Control | Open source collaboration |
+
+</p>
+
+<p align="center">
+  <b>Architecture:</b> Async-first • Event-driven • Stateless • Cloud-ready
+</p>
 
 ---
 
