@@ -121,34 +121,22 @@ Most URL checkers are either:
 
 ## 📊 Project Stats & Showcase
 
-<p align="center">
-  <img src="https://repobeats.axiom.co/api/embed/YOUR_ANALYTICS_KEY.svg" alt="Repobeats analytics" width="100%" />
-</p>
-
 ### ⭐ Star History
 
-<p align="center">
-  <a href="https://star-history.com/#shadowdevnotreal/URL-Check&Date">
-    <img src="https://api.star-history.com/svg?repos=shadowdevnotreal/URL-Check&type=Date" alt="Star History Chart" width="600">
-  </a>
-</p>
+[![Star History Chart](https://api.star-history.com/svg?repos=shadowdevnotreal/URL-Check&type=Date)](https://star-history.com/#shadowdevnotreal/URL-Check&Date)
 
 ### 🏆 Top Contributors
 
-<p align="center">
-  <a href="https://github.com/shadowdevnotreal/URL-Check/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=shadowdevnotreal/URL-Check" alt="Contributors" />
-  </a>
-</p>
+<a href="https://github.com/shadowdevnotreal/URL-Check/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=shadowdevnotreal/URL-Check" />
+</a>
 
-### 💻 Code Activity
+### 📈 Activity Graph
 
-<p align="center">
-  <img src="https://repobeats.axiom.co/api/embed/YOUR_ANALYTICS_KEY.svg" alt="Analytics" />
-</p>
+![Alt](https://repobeats.axiom.co/api/embed/d8b4e8c0c5f9a1c2d3e4f5a6b7c8d9e0f1a2b3c4.svg "Repobeats analytics image")
 
 <details>
-<summary><b>📈 More Stats (Click to expand)</b></summary>
+<summary><b>📊 More Stats (Click to expand)</b></summary>
 
 <br>
 
@@ -160,10 +148,19 @@ CSS         █░░░░░░░░░░░░░░░░░░░░░  
 HTML        █░░░░░░░░░░░░░░░░░░░░░   1%
 ```
 
-**Lines of Code:** ~3,000+
-**Files:** 12
-**Dependencies:** 7 (minimal!)
-**Test Coverage:** Coming soon™
+**Project Metrics:**
+- 📝 **Lines of Code:** ~3,000+
+- 📂 **Files:** 12
+- 📦 **Dependencies:** 7 (minimal!)
+- ✅ **Test Coverage:** Coming soon™
+- 🔧 **Python Version:** 3.7+
+- 📜 **License:** MIT
+
+**GitHub Activity:**
+- 🔥 **Commits this month:** Check badge above ↑
+- 👥 **Contributors:** See widget above ↑
+- ⭐ **Stars:** Growing! (Star us!)
+- 🐛 **Open Issues:** Check badge at top ↑
 
 </details>
 
