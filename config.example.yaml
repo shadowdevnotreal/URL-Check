@@ -1,0 +1,32 @@
+# WebCheck Configuration Example
+# Copy this file to config.yaml and customize as needed
+
+# Number of concurrent connections (default: 30)
+# Higher values = faster, but may trigger rate limiting
+concurrency: 30
+
+# Number of retries per failed check (default: 3)
+retries: 3
+
+# Timeout values in seconds
+dns_timeout: 3.0
+tcp_timeout: 3.0
+http_timeout: 10.0
+
+# Rate limiting to avoid CDN blocks
+# Delay between requests in seconds (default: 0.1)
+rate_limit_delay: 0.1
+
+# Maximum random jitter to add to delays (default: 0.3)
+# This prevents pattern detection
+jitter_max: 0.3
+
+# Enable SSL certificate verification (default: true)
+# Set to false only for testing with self-signed certificates
+ssl_verify: true
+
+# Show only failed checks (default: false)
+error_only: false
+
+# Verbose debug output (default: false)
+verbose: false
