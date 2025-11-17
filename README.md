@@ -2,6 +2,14 @@
 
 A blazingly fast, production-ready URL health monitoring tool with intelligent rate limiting, anti-fingerprinting, and comprehensive reporting capabilities.
 
+**Run Anywhere:** CLI • Web Interface • Google Cloud Shell
+
+<p align="center">
+  <a href="https://www.buymeacoffee.com/diatasso" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-green.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 180px !important;" >
+  </a>
+</p>
+
 ## ✨ Features
 
 ### 🚀 Performance
@@ -59,9 +67,56 @@ Or manually:
 pip install aiohttp aiodns colorama tqdm pyyaml
 ```
 
+### Web Interface Dependencies
+```bash
+pip install -r requirements.txt
+pip install flask flask-cors
+```
+
+## 🚀 Deployment Options
+
+### 1️⃣ Command Line (CLI)
+Run directly from terminal - fastest for scripting and automation.
+```bash
+python webcheck.py urls.txt
+```
+
+### 2️⃣ Web Interface
+Launch a browser-based UI for easier interaction.
+```bash
+python webcheck_web.py
+# Open http://localhost:5000 in your browser
+```
+
+Features:
+- Drag-and-drop URL file upload
+- Real-time progress tracking
+- Interactive result viewing
+- Download reports (HTML/JSON/CSV)
+- No command-line knowledge required
+
+### 3️⃣ Google Cloud Shell
+One-click deployment to Google Cloud Shell - no local setup required!
+
+[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/shadowdevnotreal/URL-Check)
+
+**Steps:**
+1. Click the button above
+2. Run: `pip install -r requirements.txt`
+3. Run: `python webcheck.py urls.txt` or `python webcheck_web.py`
+
+**Benefits:**
+- Free Google Cloud Shell environment
+- Pre-installed Python 3
+- 5GB persistent storage
+- Access from any browser
+- No local dependencies needed
+
+📖 **[Read the complete Cloud Shell Tutorial →](CLOUDSHELL.md)**
+
 ## 📖 Usage
 
-### Basic Usage
+### CLI Usage
 ```bash
 python webcheck.py urls.txt
 ```
